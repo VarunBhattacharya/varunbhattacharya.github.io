@@ -76,7 +76,9 @@
       //var audio = new Audio('assets/bgmusic/chopinNocturne.mp3');
       var audio = new Audio('https://raw.githubusercontent.com/VarunBhattacharya/varunbhattacharya.github.io/master/assets/bgmusic/chopinNocturne.mp3');
       audio.loop = true;
-      audio.play();
+      audio.autoplay = true;
+      audio.load();
+      // audio.play();
     });
   </script>
   <!-- <audio src="assets/bgmusic/chopinNocturne.mp3" autoplay loop></audio> -->
