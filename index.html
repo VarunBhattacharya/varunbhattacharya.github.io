@@ -71,7 +71,7 @@
   </style>
 
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', function () {
       //var audio = new Audio('assets/bgmusic/chopinNocturne.mp3');
       var audio = new Audio('https://raw.githubusercontent.com/VarunBhattacharya/varunbhattacharya.github.io/master/assets/bgmusic/chopinNocturne.mp3');
@@ -80,16 +80,21 @@
       audio.load();
       // audio.play();
     });
-  </script>
+  </script> -->
   <!-- <audio src="assets/bgmusic/chopinNocturne.mp3" autoplay loop></audio> -->
 
+  <script>
+    // play music when the "playmusic" id is encountered
+    let checkAudio = 0;
+    function playmusic(){
+      if (checkAudio == 0)
+      {      var music = new Audio("assets/bgmusic/chopinNocturne.mp3");
+      music.play();
+      checkAudio = 1;}
+    }
+  </script>
 
-  <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body>
@@ -107,25 +112,25 @@
           </strong></a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header"><span>
+          <li class="active"><a href="#header" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Home</font>
               </span></a></li>
-          <li><a href="#about"><span>
+          <li><a href="#about" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">About</font>
               </span></a></li>
-          <li><a href="#education"><span>
+          <li><a href="#education" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Education</font>
               </span></a></li>
-          <li><a href="#experience"><span>
+          <li><a href="#experience" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Experience</font>
               </span></a></li>
-          <li><a href="#portfolio"><span>
+          <li><a href="#portfolio" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Projects</font>
               </span></a></li>
-          <li><a href="#skills"><span>
+          <li><a href="#skills" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Skills</font>
               </span></a></li>
-          <li><a href="#contacts"><span>
+          <li><a href="#contacts" onclick = "playmusic()"><span>
                 <font face="font2" size="5px">Contact</font>
               </span></a></li>
 
@@ -161,7 +166,7 @@
           <img src="assets/img/VarunProfileImg.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <div style="background-color:#013b7ab5;">
+          <div style="background-color:#486faf00;"> <!--013b7a65-->
             <p>
               <font face="font4" size="5px">Hardworking and ambitious individual with a great passion for the
                 software industry. Extremely patient, self-motivated, and very adaptable to accomplish challenging
@@ -173,7 +178,7 @@
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <div style="background-color: #013b7a65;">
+                <div style="background-color: #486faf00;"> <!--013b7a65-->
                   <font face="font4" size="4px">
                     <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Hyderabad, India</li>
                     <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> varunb.working@gmail.com</li>
@@ -190,13 +195,13 @@
                 }
 
                 a:hover {
-                  color: #47aeff;
+                  color: #56b2f9;
                 }
               </style>
 
 
               <ul>
-                <div style="background-color: #013b7a65;">
+                <div style="background-color: #486faf00;"> <!--013b7a65-->
                   <font face="font4" size="4px">
                     <li><i class="icofont-rounded-right"></i> <strong>Resume:</strong>
                       <a href="https://drive.google.com/file/d/1qHciHVfREaiBWcBEHSZI78NedKpOe93m/view?usp=share_link"
@@ -389,8 +394,8 @@
                   <font face="font4">Machine Learning</font>
                 </h4>
                 <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/certificate/7YNA7TS966RX"
-                    target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/7YNA7TS966RX" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -420,8 +425,8 @@
                   <font face="font4">SQL For Data Science</font>
                 </h4>
                 <div class="portfolio-links">
-                  <a href="https://www.coursera.org/account/accomplishments/certificate/HXYQQHWR83YU"
-                    target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/HXYQQHWR83YU" target="_blank"
+                    title="Certificate"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -1158,391 +1163,424 @@
   <!-- Start Skills Section -->
 
   <section id="skills" class="services">
-      <div class="interests container">
+    <div class="interests container">
+      <div class="section-title">
+        <h2>
+          <font face="font1" size="3px">Languages and Databases</font>
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">Python</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">Java</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">C</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #1c7d32;"></i>
+            <h3>
+              <font face="font4" size="5px">C++</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #28a745;"></i>
+            <h3>
+              <font face="font4" size="5px">MySQL</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #f1081f;"></i>
+            <h3>
+              <font face="font4" size="5px">SQLite</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #47aeff;"></i>
+            <h3>
+              <font face="font4" size="5px">R</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-cpu-fill" style="color: #ffc107;"></i>
+            <h3>
+              <font face="font4" size="5px">Rexx</font>
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-html5-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">HTML</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-css3-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">CSS</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="  ri-terminal-box-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">JavaScript</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="  ri-terminal-box-fill" style="color: #1c7d32;"></i>
+            <h3>
+              <font face="font4" size="5px">PHP</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #28a745;"></i>
+            <h3>
+              <font face="font4" size="5px">JQuery</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #f1081f;"></i>
+            <h3>
+              <font face="font4" size="5px">TypeScript</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #47aeff;"></i>
+            <h3>
+              <font face="font4" size="5px">Matlab</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-terminal-box-fill" style="color: #ffc107;"></i>
+            <h3>
+              <font face="font4" size="5px">Selenium</font>
+            </h3>
+          </div>
+        </div>
+
         <div class="section-title">
           <h2>
-            <font face="font1" size="3px">Languages and Databases</font>
+            <font face="font1" size="3px">Frameworks</font>
           </h2>
         </div>
-  
-        <div class="row">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #ffbb2c;"></i>
-              <h3>
-                <font face="font4" size="5px">Python</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #5578ff;"></i>
-              <h3>
-                <font face="font4" size="5px">Java</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #e80368;"></i>
-              <h3>
-                <font face="font4" size="5px">C</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #1c7d32;"></i>
-              <h3>
-                <font face="font4" size="5px">C++</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #28a745;"></i>
-              <h3>
-                <font face="font4" size="5px">MySQL</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #f1081f;"></i>
-              <h3>
-                <font face="font4" size="5px">SQLite</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #47aeff;"></i>
-              <h3>
-                <font face="font4" size="5px">R</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-cpu-fill" style="color: #ffc107;"></i>
-              <h3>
-                <font face="font4" size="5px">Rexx</font>
-              </h3>
-            </div>
-          </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-html5-fill" style="color: #ffbb2c;"></i>
-              <h3>
-                <font face="font4" size="5px">HTML</font>
-              </h3>
-            </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">Django</font>
+            </h3>
           </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-css3-fill" style="color: #5578ff;"></i>
-              <h3>
-                <font face="font4" size="5px">CSS</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="  ri-terminal-box-fill" style="color: #e80368;"></i>
-              <h3>
-                <font face="font4" size="5px">JavaScript</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="  ri-terminal-box-fill" style="color: #1c7d32;"></i>
-              <h3>
-                <font face="font4" size="5px">PHP</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #28a745;"></i>
-              <h3>
-                <font face="font4" size="5px">JQuery</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #f1081f;"></i>
-              <h3>
-                <font face="font4" size="5px">TypeScript</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #47aeff;"></i>
-              <h3>
-                <font face="font4" size="5px">Matlab</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-terminal-box-fill" style="color: #ffc107;"></i>
-              <h3>
-                <font face="font4" size="5px">Selenium</font>
-              </h3>
-            </div>
-          </div>
-          
-          <div class="section-title">
-            <h2>
-              <font face="font1" size="3px">Frameworks</font>
-            </h2>
-          </div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #ffbb2c;"></i>
-              <h3>
-                <font face="font4" size="5px">Django</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #5578ff;"></i>
-              <h3>
-                <font face="font4" size="5px">Flask</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #e80368;"></i>
-              <h3>
-                <font face="font4" size="5px">FastAPI</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #1c7d32;"></i>
-              <h3>
-                <font face="font4" size="5px">JavaFx</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #28a745;"></i>
-              <h3>
-                <font face="font4" size="5px">OpenCV</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #f1081f;"></i>
-              <h3>
-                <font face="font4" size="5px">Tensorflow</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #47aeff;"></i>
-              <h3>
-                <font face="font4" size="5px">PyTorch</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #ffc107;"></i>
-              <h3>
-                <font face="font4" size="5px">Scikit-Learn</font>
-              </h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #ffbb2c;"></i>
-              <h3>
-                <font face="font4" size="5px">NodeJS</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class=" ri-bug-fill" style="color: #5578ff;"></i>
-              <h3>
-                <font face="font4" size="5px">AngualarJS</font>
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="  ri-bug-fill" style="color: #e80368;"></i>
-              <h3>
-                <font face="font4" size="5px">ReactJS</font>
-              </h3>
-            </div>
-          </div>
-
-
-
-
-          <div class="section-title">
-            <h2>
-              <font face="font1" size="3px">Cloud Technology</font>
-            </h2>
-          </div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div class="col-lg-3 col-md-4">
-  <div class="icon-box">
-    <i class=" ri-file-cloud-fill" style="color: #ffbb2c;"></i>
-    <h3>
-      <font face="font4" size="5px">Azure</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-  <div class="icon-box">
-    <i class=" ri-file-cloud-fill" style="color: #5578ff;"></i>
-    <h3>
-      <font face="font4" size="5px">AWS</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-  <div class="icon-box">
-    <i class=" ri-file-cloud-fill" style="color: #e80368;"></i>
-    <h3>
-      <font face="font4" size="5px">OCI</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-  <div class="icon-box">
-    <i class=" ri-file-cloud-fill" style="color: #1c7d32;"></i>
-    <h3>
-      <font face="font4" size="5px">GCP</font>
-    </h3>
-  </div>
-</div>
-
-
-
-<div class="section-title">
-  <h2>
-    <font face="font1" size="3px">Technology</font>
-  </h2>
-</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div class="col-lg-3 col-md-4">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #ffbb2c;"></i>
-    <h3>
-      <font face="font4" size="5px">Machine Learning</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #5578ff;"></i>
-    <h3>
-      <font face="font4" size="5px">Deep Learning</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #e80368;"></i>
-    <h3>
-      <font face="font4" size="5px">Artificial Intelligence</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #1c7d32;"></i>
-    <h3>
-      <font face="font4" size="5px">Data Analytics</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #28a745;"></i>
-    <h3>
-      <font face="font4" size="5px">Data Science</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #f1081f;"></i>
-    <h3>
-      <font face="font4" size="5px">Mainframe Engineering</font>
-    </h3>
-  </div>
-</div>
-<div class="col-lg-3 col-md-4 mt-4">
-  <div class="icon-box">
-    <i class=" ri-bug-fill" style="color: #47aeff;"></i>
-    <h3>
-      <font face="font4" size="5px">Software Development</font>
-    </h3>
-  </div>
-</div>
-
-
-
         </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">Flask</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">FastAPI</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #1c7d32;"></i>
+            <h3>
+              <font face="font4" size="5px">JavaFx</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #28a745;"></i>
+            <h3>
+              <font face="font4" size="5px">OpenCV</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #f1081f;"></i>
+            <h3>
+              <font face="font4" size="5px">Tensorflow</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #47aeff;"></i>
+            <h3>
+              <font face="font4" size="5px">PyTorch</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #ffc107;"></i>
+            <h3>
+              <font face="font4" size="5px">Scikit-Learn</font>
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">NodeJS</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-bug-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">AngualarJS</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="  ri-bug-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">ReactJS</font>
+            </h3>
+          </div>
+        </div>
+
+
+
+
+        <div class="section-title">
+          <h2>
+            <font face="font1" size="3px">Cloud Technology</font>
+          </h2>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class=" ri-file-cloud-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">Azure</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-file-cloud-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">AWS</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-file-cloud-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">OCI</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class=" ri-file-cloud-fill" style="color: #1c7d32;"></i>
+            <h3>
+              <font face="font4" size="5px">GCP</font>
+            </h3>
+          </div>
+        </div>
+
+
+
+        <div class="section-title">
+          <h2>
+            <font face="font1" size="3px">Technology</font>
+          </h2>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">Machine Learning</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">Deep Learning</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">Artificial Intelligence</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #1c7d32;"></i>
+            <h3>
+              <font face="font4" size="5px">Data Analytics</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #28a745;"></i>
+            <h3>
+              <font face="font4" size="5px">Data Science</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #f1081f;"></i>
+            <h3>
+              <font face="font4" size="5px">Mainframe Engineering</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #47aeff;"></i>
+            <h3>
+              <font face="font4" size="5px">Software Development</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #ffc107;"></i>
+            <h3>
+              <font face="font4" size="5px">Image Editing</font>
+            </h3>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #ffbb2c;"></i>
+            <h3>
+              <font face="font4" size="5px">Audio Editing</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class=" ri-apps-fill" style="color: #5578ff;"></i>
+            <h3>
+              <font face="font4" size="5px">Video Editing</font>
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="  ri-apps-fill" style="color: #e80368;"></i>
+            <h3>
+              <font face="font4" size="5px">Software Testing</font>
+            </h3>
+          </div>
+        </div>
+
+
+
+      </div>
 
   </section> <!--End Links Section -->
 
@@ -1570,7 +1608,7 @@
 
       <div class="row mt-2">
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box" style="background:#013b7ae8;">
+          <div class="info-box" style="background:#09203a91;"> <!--#013b7ae8-->
             <i class="bx bx-envelope"></i>
             <h3>
               <font face="font4" size="5px"><strong>Email</font></strong>
@@ -1583,7 +1621,7 @@
         </div>
 
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box" style="background:#013b7ae8;">
+          <div class="info-box" style="background:#09203a91;">
             <i class="bx bx-share-alt"></i>
             <h3>
               <font face="font4" size="5px"><strong>Social Profiles</font></strong>
