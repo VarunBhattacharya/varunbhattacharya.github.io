@@ -86,15 +86,17 @@
   <script>
     // play music when the "playmusic" id is encountered
     let checkAudio = 0;
-    function playmusic(){
-      if (checkAudio == 0)
-      {      var music = new Audio("assets/bgmusic/chopinNocturne.mp3");
-      music.play();
-      checkAudio = 1;}
+    function playmusic() {
+      if (checkAudio == 0) {
+        var music = new Audio("assets/bgmusic/chopinNocturne.mp3");
+        music.play();
+        music.autoplay = true;
+        checkAudio = 1;
+      }
     }
   </script>
 
-  
+
 </head>
 
 <body>
@@ -112,25 +114,25 @@
           </strong></a></h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header" onclick = "playmusic()"><span>
+          <li class="active"><a href="#header" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Home</font>
               </span></a></li>
-          <li><a href="#about" onclick = "playmusic()"><span>
+          <li><a href="#about" onclick="playmusic()"><span>
                 <font face="font2" size="5px">About</font>
               </span></a></li>
-          <li><a href="#education" onclick = "playmusic()"><span>
+          <li><a href="#education" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Education</font>
               </span></a></li>
-          <li><a href="#experience" onclick = "playmusic()"><span>
+          <li><a href="#experience" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Experience</font>
               </span></a></li>
-          <li><a href="#portfolio" onclick = "playmusic()"><span>
+          <li><a href="#portfolio" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Projects</font>
               </span></a></li>
-          <li><a href="#skills" onclick = "playmusic()"><span>
+          <li><a href="#skills" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Skills</font>
               </span></a></li>
-          <li><a href="#contacts" onclick = "playmusic()"><span>
+          <li><a href="#contacts" onclick="playmusic()"><span>
                 <font face="font2" size="5px">Contact</font>
               </span></a></li>
 
