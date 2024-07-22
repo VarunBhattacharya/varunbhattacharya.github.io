@@ -23,7 +23,7 @@ function cvButton() {
 function academicShow() {
     document.getElementById("educationSection").innerHTML = '<br>' + '<font face="font1">' +
         '<ul>' +
-        '&#10154; <b>BTech. in Information Technology (Dec 2020 - Present)</b> <br>' +
+        '&#10154; <b>BTech. in Information Technology (Dec 2020 - Aug 2024)</b> <br>' +
         '&nbsp;&nbsp; <font face="font1" size="4px">Vellore Institute of Technology, Vellore, India</font> <br>' +
         '<!-- &nbsp;&nbsp; <font face="font1" size="4px">CGPA: 9.11 / 10</font> -->' +
         '</ul>' +
