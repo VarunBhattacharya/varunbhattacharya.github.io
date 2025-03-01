@@ -9,11 +9,11 @@ window.onload = function () {
 
 /*SPOTLIGHT SECTION*/
 function resumeButton() {
-    window.open("https://drive.google.com/file/d/1QRyx16MY2teGRbJ32zOl1UlTI007W-yk/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/file/d/1RQhqvS61xdaEaer3WY_WcdDK-5owneAY/view?usp=sharing", "_blank");
 }
 
 function cvButton() {
-    window.open("https://drive.google.com/file/d/1CBbUezjLSxMbx8rGt_k1TX4oVy_nO2dW/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/file/d/10Vl2n7jxfIG-uJCzuu-RRx_ZntXZn3Zx/view?usp=sharing", "_blank");
 
 }
 /*SPOTLIGHT SECTION END*/
@@ -228,11 +228,15 @@ function professionalExpShow() {
         &#10551; <font size = 3px>Bengaluru, Karnataka, India &#8680; 30 July 2024 - Present</font>
         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id = "experienceTextAllign2"><font size = 3px>
-            &#10174; Working on CNDRA.
+            &#10174; Progressed and established the Cloud Native Diameter Routing Agent (CNDRA) using Kubernetes, ensuring high availability and scalability across cloud platforms, achieving a 30% improvement in deployment efficiency.
             <br>
-            &#10174; Creating new UI screens for the product as per the UX design team requirements.
+            &#10174; Revamped the user interface for the CNDRA product using the RAPID framework (ReactJS), improving usability and driving a 20% increase in user engagement by delivering a more intuitive, customer-centric design.
             <br>
-            <u>Skills</u>: Python, Java, BDD, Jenkins, Docker, Helm, Kubernetes, ReactJS, RAPID, Openstack
+            &#10174; Analyzed and optimized performance of LoxiLB, CNLB, and MetalLB load balancers, ensuring seamless integration and compatibility with CNDRA, resulting in a 15% reduction in latency.
+            <br>
+            &#10174; Led migration efforts from Spring Boot to Micronaut, directly enhancing system functionality, resulting in a 30% reduction in technical debt and allowing for faster feature releases, thus improving product delivery timelines.
+            <br>
+            <u>Skills</u>: Java, SpringBoot, Micronaut, SQL, ReactJS, RAPID, Kubernetes, Load Balancer, Virtual Machine, Python, Docker, Helm, Jenkins
         </div></font>
     </ul> 
 
@@ -245,21 +249,15 @@ function professionalExpShow() {
         &#10551; <font size = 3px>Bengaluru, Karnataka, India &#8680; 17 January 2024 - 12 July 2024</font>
         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id = "experienceTextAllign2"><font size = 3px>
-            &#10174; Worked on Cloud Native Diameter Routing Agent (CNDRA) product.
+            &#10174; Led the development of a comprehensive testing suite using BDD and Python, ensuring product reliability and reducing manual testing efforts by 70% for the Cloud Native Diameter Routing Agent (CNDRA).
             <br>
-            &#10174; Developed the overall testing suite for the product using BDD and python scripts.
+            &#10174; Streamlined product automation by integrating Jenkins and Docker, optimizing the CI/CD pipeline for seamless product deployments in cloud environments with Kubernetes, resulting in 50% less manipulation.
             <br>
-            &#10174; Introduced a new alternative tool for Seagull for signalling cases and utilized it for the product.
+            &#10174; Enhanced UI and system infrastructure by optimizing VM configurations for SCTP signaling and developing intuitive interfaces with the RAPID framework, resulting in a 20% performance boost.
             <br>
-            &#10174; Worked on the automation of the product using Jenkins and Docker.
+            &#10174; Introduced new internal tool in the team: Diamclient to replace the behavior of the open source tool Seagull for signalling traffic increasing the adaptibility by 60%.
             <br>
-            &#10174; Worked on the deployment of the product in the cloud using Kubernetes.
-            <br>
-            &#10174; Developed few UI screens for the product using RAPID framework based on ReactJS.
-            <br>
-            &#10174; Created new VM's with the support of SCTP signalling cases.
-            <br>
-            <u>Skills</u>: Python, Java, BDD, Jenkins, Docker, Helm, Kubernetes, ReactJS, RAPID, Openstack
+            <u>Skills</u>: Python, Java, BDD, Selenium, SQL, Jenkins, Docker, Helm, Kubernetes, ReactJS, RAPID, Openstack
         </div></font>
     </ul> 
     `;

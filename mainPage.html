@@ -19,7 +19,7 @@
 	</head>
 
 
-	<script>
+	<!-- <script>
 		// play music when the "playmusic" id is encountered
 		let checkAudio = 0;
 		function playmusic() {
@@ -31,7 +31,46 @@
 			checkAudio = 1;
 		  }
 		}
+	</script> -->
+
+	<script>
+		const musicFiles = [
+		  "assets/bgMusic/etudeOp25No1_Chopin.mp3",
+		  "assets/bgMusic/symphonieEspagnole_Lalo.mp3",
+		  "assets/bgMusic/waltzOp69No2_Chopin.mp3",
+		  "assets/bgMusic/clairDeLune_Debussy.mp3",
+		];
+	  
+		// play music when the "playmusic" id is encountered
+		let checkAudio = 0;
+		let music;
+	  
+		function playmusic() {
+		  if (checkAudio === 0) {
+			playRandomMusic();
+			checkAudio = 1;
+		  }
+		}
+	  
+		function playRandomMusic() {
+		  const randomIndex = Math.floor(Math.random() * musicFiles.length);
+		  const selectedMusic = musicFiles[randomIndex];
+	  
+		  music = new Audio(selectedMusic);
+		  music.play();
+		  music.autoplay = true;
+		  music.loop = false;
+	  
+		  music.addEventListener("ended", playRandomMusic);
+		}
 	  </script>
+
+	<script>
+		// disable right click
+		document.addEventListener("contextmenu", function (event) {
+		event.preventDefault();
+		});
+	</script>
 
 
 	<body class="is-preload" id="bodyCursor">
