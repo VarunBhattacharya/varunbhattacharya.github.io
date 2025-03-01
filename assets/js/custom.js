@@ -400,7 +400,7 @@ function researchShow() {
     <ul>
         <font size = 5px>
             &#10149; <b>Advancing Gender, Age and Ethnicity with YOLOv5 and Transfer Learning</b> &nbsp;
-            <div id = "projectDivLink" onclick = "ismsWebsite()"><i id = "projectLink" class = "fa" style = "font-size: 16px;">&#xf08e;</i></div>
+            <div id = "projectDivLink" onclick = "ageGenderPaperRelease()"><i id = "projectLink" class = "fa" style = "font-size: 16px;">&#xf08e;</i></div>
         </font>
         <br>
         <div id = "projectTextAllign1"><font size = 3px>
@@ -603,6 +603,10 @@ function volkswagenWebsite() {
 
 function ismsWebsite() {
     window.open("https://isms2023.opju.ac.in/", "_blank");
+}
+
+function ageGenderPaperRelease() {
+    window.open("https://link.springer.com/chapter/10.1007/978-3-031-66410-6_23", "_blank");
 }
 
 function microcontrollerPaperRelease() {
