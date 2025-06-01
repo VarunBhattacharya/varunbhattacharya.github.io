@@ -9,7 +9,7 @@ window.onload = function () {
 
 /*SPOTLIGHT SECTION*/
 function resumeButton() {
-    window.open("https://drive.google.com/file/d/1RQhqvS61xdaEaer3WY_WcdDK-5owneAY/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1Y5fiNhfYckgqv7G_0iTKouSuxU3A45ac/view?usp=sharing", "_blank");
 }
 
 function cvButton() {
