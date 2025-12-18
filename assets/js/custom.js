@@ -13,7 +13,7 @@ function resumeButton() {
 }
 
 function cvButton() {
-    window.open("https://drive.google.com/file/d/10Vl2n7jxfIG-uJCzuu-RRx_ZntXZn3Zx/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1kXw2Wn0CdRsG9HF35B8BcLdaUIThFbC9/view?usp=sharing", "_blank");
 
 }
 /*SPOTLIGHT SECTION END*/
@@ -222,19 +222,25 @@ function professionalExpShow() {
     <ul>
         &#10149; <font face = "font1" size = 4px><b>
         <div id = "internLinkAllign" onclick = "oracleWebsite()">Oracle</div>
-        </b> &#8680; Associate Software Developer</font>
+        </b> &#8680; Software Engineer I</font>
         <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         &#10551; <font size = 3px>Bengaluru, Karnataka, India &#8680; 30 July 2024 - Present</font>
         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id = "experienceTextAllign2"><font size = 3px>
-            &#10174; Progressed and established the Cloud Native Diameter Routing Agent (CNDRA) using Kubernetes, ensuring high availability and scalability across cloud platforms, achieving a 30% improvement in deployment efficiency.
+            &#10174; Engineered Cloud Native Diameter Routing Agent (CNDRA) on Kubernetes, guaranteeing 99.99% availability and horizontal scalability, supporting a 40% increase in network traffic without performance degradation.
             <br>
             &#10174; Revamped the user interface for the CNDRA product using the RAPID framework (ReactJS), improving usability and driving a 20% increase in user engagement by delivering a more intuitive, customer-centric design.
             <br>
-            &#10174; Analyzed and optimized performance of LoxiLB, CNLB, and MetalLB load balancers, ensuring seamless integration and compatibility with CNDRA, resulting in a 15% reduction in latency.
+            &#10174; Led the design and implementation of a data migration system enabling CSV-based transfer of DSR configurations between CNDRA instances. Architected shared-volume data pipeline between UI and backend, reducing manual configuration time by 80% and eliminating transfer errors.
             <br>
             &#10174; Led migration efforts from Spring Boot to Micronaut, directly enhancing system functionality, resulting in a 30% reduction in technical debt and allowing for faster feature releases, thus improving product delivery timelines.
+            <br>
+            &#10174; Developed an AI-powered development workflow using MCP servers that analyzes JIRA requirements and Oracle's codebase to suggest context-aware code changes, reducing development cycle time by 40% and decreasing requirement misinterpretation.
+            <br>
+            &#10174; Delivered a hybrid rate limiting feature combining leaky bucket and token bucket algorithms, increasing system stability under heavy load and reducing traffic-related incidents by 30%.
+            <br>
+            &#10174; Evaluated and tested multiple load balancers, ultimately implementing LoxiLB for optimized SCTP signaling, which contributed to a 15% reduction in latency and a 20% overall system performance improvement.
             <br>
             <u>Skills</u>: Java, SpringBoot, Micronaut, SQL, ReactJS, RAPID, Kubernetes, Load Balancer, Virtual Machine, Python, Docker, Helm, Jenkins
         </div></font>
