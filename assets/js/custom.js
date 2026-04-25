@@ -221,11 +221,28 @@ function professionalExpShow() {
         `
     <ul>
         &#10149; <font face = "font1" size = 4px><b>
+        <div id = "internLinkAllign" onclick = "sanofiWebsite()">Sanofi</div>
+        </b> &#8680; Software Engineer II</font>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &#10551; <font size = 3px>Hyderabad, Telangana, India &#8680; 23 March 2026 - Present</font>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div id = "experienceTextAllign2"><font size = 3px>
+            &#10174; Architected a FastAPI microservice orchestrator for ChemDiary ELN with concurrent data retrieval, API routing and load balancing on OpenShift, achieving 35% latency reduction while currently mentoring 3 interns on microservices and deployment best practices.
+            <br>
+            &#10174; Diagnosed and resolved critical network routing failures between main server and internal Sanofi products, reducing MTTR by 40 &#x002D; 50% and actively implementing new networking features to further improve uptime.
+            <br>
+            &#10174; Leading CLAP middleware re-architecture, ingesting medical device data into AWS S3 with Linux infrastructure upgrades, targeting 99.9%+ pipeline availability across downstream products including ChemDiary.
+        </div></font>
+    </ul> 
+
+    <ul>
+        &#10149; <font face = "font1" size = 4px><b>
         <div id = "internLinkAllign" onclick = "oracleWebsite()">Oracle</div>
         </b> &#8680; Software Engineer I</font>
         <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        &#10551; <font size = 3px>Bengaluru, Karnataka, India &#8680; 30 July 2024 - Present</font>
+        &#10551; <font size = 3px>Bengaluru, Karnataka, India &#8680; 30 July 2024 - 20 March 2026</font>
         <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div id = "experienceTextAllign2"><font size = 3px>
             &#10174; Engineered Cloud Native Diameter Routing Agent (CNDRA) on Kubernetes, guaranteeing 99.99% availability and horizontal scalability, supporting a 40% increase in network traffic without performance degradation.
@@ -593,6 +610,10 @@ function ltiWebsite() {
 
 function oracleWebsite() {
     window.open("https://www.oracle.com/", "_blank");
+}
+
+function sanofiWebsite() {
+    window.open("https://www.sanofi.com/en", "_blank");
 }
 
 function isaWebsite() {
